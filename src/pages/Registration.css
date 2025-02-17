@@ -1,0 +1,133 @@
+/* General Styles */
+.containerone {
+    max-width: 50rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: var(--backgroundSecondary);
+    border: 1px solid var(--borderColor);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .containerone h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  .containerone p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondaryColor);
+  }
+  
+  /* Input Field Styles */
+  label {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--textColor);
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--borderColor);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+  }
+  
+  input:focus {
+    border-color: var(--main-color);
+    outline: none;
+    box-shadow: 0 0 4px var(--main-color);
+  }
+  
+  /* Button Styles */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: var(--buttonColor);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  
+  .btn:hover {
+    background-color: var(--main-color);
+  }
+  
+  /* Link and Summary */
+  a {
+    color: var(--anchorColor);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .summary {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: var(--secondaryColor);
+  }
+
+/* //this one is for login last one, className="navlink" */
+/* Sign Up Link Styling */
+.signup-link {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+  }
+  
+  /* Regular Link Styles */
+  .signup-link .navlink {
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  
+  .signup-link .navlink:hover {
+    text-decoration: underline;
+  }
+  
+  /* Active Link Styling */
+  .signup-link .navlink.active {
+    color: #ff6600; /* Change this color to highlight the active link */
+    font-weight: bold; /* Optional: make the active link bold */
+    text-decoration: underline;
+  }
+/* this one is for containerone h2 */
+/* Welcome Text Styling */
+.containerone h2 {
+    font-family: 'Poppins', sans-serif; /* Use a unique font */
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2c3e50; /* A dark, contrasting color */
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  /* Unique Login Header */
+.card h1 {
+    font-family: 'Montserrat', sans-serif; /* A different font */
+    font-size: 2.5rem;
+    /* color:#2c3e50; A red color to match with a unique vibe */
+    color: var(--main-color);
+    margin-bottom: 2rem;
+  }
+  
+  .card h1:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

@@ -1,0 +1,137 @@
+/* Avatar Section */
+.add-book-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  /*  */
+  width: 100%;
+}
+
+.divcenterimage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.avatar-placeholder-addbook {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  font-size: 14px;
+  color: #888888;
+  text-align: center;
+}
+
+.avatar-preview-addbook {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #007bff;
+}
+
+/* for image */
+.avatar-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-book-form label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+.add-book-form input[type="file"] {
+  margin-left: 10px;
+}
+
+/* for  */
+
+/* Main container and form layout */
+.add-book-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.add-book-main-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.add-book-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.add-book-form-wrapper {
+  margin-top: 10px;
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px; /* Adds padding inside the form */
+  border: 1px solid #cccccc; /* Adds a light border around the form */
+  border-radius: 10px; /* Rounded corners for the form */
+  background-color: #ffffff; /* Background color inside the form */
+}
+
+.add-book-form label {
+  display: flex;
+  align-items: center; /* Align label text vertically with input fields */
+  justify-content: space-between; /* Creates spacing between label and input */
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 5px; /* Ensures slight separation between items */
+}
+
+.add-book-form input {
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  flex: 1;
+  margin-left: 10px; /* adds space between label and input field */
+}
+
+.add-book-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-book-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.add-book-button:hover {
+  background-color: #0056b3;
+}

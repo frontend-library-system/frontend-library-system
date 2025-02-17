@@ -1,0 +1,168 @@
+/* About Page Styling */
+.about-container {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* About Section - Stays on Top */
+.about-section.about-top {
+    width: 100%;
+    text-align: center;
+}
+
+/* Flexbox Layout for Rows */
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.about-row .card {
+    flex: 1; /* Equal width for each section */
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography */
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #202124;
+    margin-bottom: 1.5rem;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #202124;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+/* Features List */
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.features-list li {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.features-list li::before {
+    content: "✔";
+    color: #28a745;
+    position: absolute;
+    left: 0;
+}
+
+/* Button Styling */
+.cta-button {
+    background-color: #202124;
+    color: #f8f9fa;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.cta-button:hover {
+    background-color: #343a40;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-row {
+        flex-direction: column;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .features-list li {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 2rem 1rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+    }
+
+    .features-list li {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+}

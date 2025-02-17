@@ -1,0 +1,265 @@
+.my-library {
+    padding: 20px;
+    text-align: center;
+}
+
+/* // */
+.booksdisplay {
+    margin: 100px 170px;
+}
+
+.booksdisplay hr {
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+
+.booksdisplay-header {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr 1fr;  /* Adjusted columns to fit the remove button */
+    align-items: center;
+    /* little form 75 to 65 */
+    gap: 50px; 
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* booksdisplay-header */
+
+.booksdisplay-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr 1fr; /* Matching the header's layout */
+    align-items: center;
+    gap: 50px; /* Reduced gap for alignment */
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.booksdisplay-cover {
+    height: 62px;
+}
+
+.booksdisplay-remove {
+    justify-self: center; /* Align the button in the center of its column */
+    align-self: center;
+    width: 70px; /* Adjusted width for better alignment */
+    height: 35px; /* Adjusted height for better alignment */
+    background: #ff5a5a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.booksdisplay-remove:hover {
+    background: #e04949; /* Slightly darker shade for hover effect */
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.booksdisplay-quantity {
+    justify-self: center; /* Align quantity button in the center */
+    align-self: center;
+    width: 50px; /* Reduced width */
+    height: 35px; /* Reduced height */
+    border: 2px solid #ebebeb;
+    background: #fff;
+    text-align: center; /* Center text */
+}
+/* for the status-button color for client */
+/* Status Button Styles */
+.status-button-client {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: default;
+  }
+  
+  .status-approved {
+    background-color: #4caf50; /* Green */
+    color: white;
+  }
+  
+  .status-rejected {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .status-pending {
+    background-color: #ff9800; /* Orange */
+    color: white;
+  }
+/* for footer */
+.booksdisplay-footer {
+    display: flex;
+    margin: 100px 0px;
+}
+
+.booksdisplay-summary {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+
+.booksdisplay-summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.booksdisplay-summary h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* for button  */
+.proceed-button{
+        width: 262px;
+        height: 58px;
+        outline: none;
+        border: none;
+        background: #ff5a5a;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease; /* smooth transition for hover effect */
+}
+
+.proceed-button:hover {
+    background: #e04949; /* Slightly darker shade for hover effect */
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+@media (max-width: 1280px) {
+    .booksdisplay-header {
+        grid-template-columns: 0.5fr 2fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+        gap: 15px; /* Further reduced gap */
+        font-size: 15px;
+    }
+    .booksdisplay-item {
+        grid-template-columns: 0.5fr 2fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+        gap: 15px;
+    }
+    .booksdisplay-cover {
+        height: 50px;
+    }
+    .booksdisplay-quantity {
+        width: 40px;
+        height: 30px;
+    }
+    .booksdisplay-remove {
+        width: 60px;
+        height: 30px;
+    }
+}
+/* for mobile responsive please */
+@media (max-width: 768px) {
+    .booksdisplay {
+        margin: 10px; /* Reduce margins for smaller screens */
+    }
+
+    .booksdisplay-header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Simplified layout for smaller screens */
+        font-size: 14px; /* Adjust font size */
+        gap: 5px; /* Reduce gap */
+        text-align: center;
+    }
+
+    .booksdisplay-item {
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); /* Match the header layout */
+        gap: 5px;
+        padding: 10px 0;
+        align-items: center;
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .booksdisplay-cover img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        max-width: 80px; /* Limit maximum width for small images */
+        margin: auto;
+        display: block;
+    }
+
+    .booksdisplay-quantity {
+        width: 40px; /* Adjust button width */
+        height: 35px; /* Adjust button height */
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .booksdisplay-remove {
+        width: 80px; /* Smaller button width */
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .booksdisplay-footer {
+        flex-direction: column; /* Stack footer items vertically */
+        gap: 15px;
+        margin: 15px 0;
+    }
+
+    .booksdisplay-summary h1 {
+        font-size: 18px; /* Adjust font size for better visibility */
+    }
+
+    .booksdisplay-summary-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items */
+        gap: 5px; /* Add spacing between elements */
+    }
+
+    .proceed-button {
+        width: 100%; /* Full width button for mobile */
+        height: 45px; /* Adjust button height */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 500px) {
+    .booksdisplay-header {
+        display: none; /* Hide the table-like header for small screens */
+    }
+
+    .booksdisplay-item {
+        display: flex; /* Stack items vertically */
+        flex-direction: column; /* Vertical layout for smaller screens */
+        gap: 10px; /* Add space between items */
+        padding: 10px;
+        border-bottom: 1px solid #ddd; /* Add a separator for clarity */
+    }
+
+    .booksdisplay-item > div {
+        display: flex;
+        justify-content: space-between; /* Align label and value */
+        font-size: 14px;
+    }
+
+    .booksdisplay-cover img {
+        max-width: 60px; /* Smaller image size */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px;
+    }
+
+    .booksdisplay-summary h1 {
+        font-size: 16px; /* Smaller heading */
+    }
+
+    .proceed-button {
+        height: 40px; /* Adjust button height */
+        font-size: 12px;
+    }
+}
+

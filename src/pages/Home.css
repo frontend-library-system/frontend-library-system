@@ -1,0 +1,128 @@
+
+
+  
+  .home-container {
+    background-image: url('/image 10.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .content-container {
+    padding: 3rem; /* Padding for spacing */
+    border-radius: 1.5rem; /* Rounded corners */
+    text-align: center;
+    /* backdrop-filter: blur(10px); Blur effect */
+    background-color: transparent; /* Transparent background */
+  }
+  
+  .content-header h1 {
+    font-size: 5.5rem; /* Font size for title */
+    font-weight: bold;
+    color: #f8f9fa; /* Dark gray color */
+    margin-bottom: 1rem;
+  }
+  
+  .content-description {
+    font-size: 2.0rem; /* Font size for description */
+    color: #ffff; /* Gray color */
+    margin-bottom: 2rem;
+  }
+  
+  .button-container1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .google-style-button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /*space between icon and text*/
+    background-color: #f8f9fa; /* Google's light gray button */
+    color: #202124; /* Google's dark text color */
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border: 1px solid #dadce0; /* Light gray border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.15); /* Subtle shadow */
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .google-style-button:hover {
+    background-color: #f1f3f4; /* Slightly darker gray on hover */
+    box-shadow: 0 2px 4px rgba(60, 64, 67, 0.3); /* Slightly stronger shadow */
+    text-decoration: none;
+  }
+  
+  .google-style-button:active {
+    background-color: #e8eaed; /* Darker gray on click */
+    box-shadow: none; /* Remove shadow on click */
+  }
+  
+  .search-icon1 {
+    font-size: 20px;
+    color: #202124;
+  }
+
+.navlink0:hover {
+  text-decoration: none; /*to remove text underline*/
+}
+.navlink0 {
+  text-decoration: none;
+}
+
+
+/*to make it responsive */
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 2rem; /* Reduce padding for smaller screens */
+  }
+
+  .content-header h1 {
+    font-size: 4rem; /* Adjust title size */
+  }
+
+  .content-description {
+    font-size: 1.5rem; /* Adjust description size */
+  }
+
+  .google-style-button {
+    font-size: 14px; /* Reduce button text size */
+    padding: 8px 20px; /* Adjust padding */
+  }
+
+  .search-icon1 {
+    font-size: 18px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .content-container {
+    padding: 1.5rem; /* Further reduce padding */
+  }
+
+  .content-header h1 {
+    font-size: 3rem; /* Further adjust title size */
+  }
+
+  .content-description {
+    font-size: 1.2rem; /* Further adjust description size */
+  }
+
+  .google-style-button {
+    font-size: 12px; /* Further reduce button text size */
+    padding: 6px 15px; /* Adjust padding for small devices */
+  }
+
+  .search-icon1 {
+    font-size: 16px; /* Adjust icon size for small screens */
+  }
+}

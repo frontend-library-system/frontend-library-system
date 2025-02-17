@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+
+/* Slide Sidebar */
+.slide {
+  height: 799px;
+  width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: 0.5s ease;
+  transform: translateX(-100%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.slide.show {
+  transform: translateX(0);
+}
+
+/* Header Color */
+.ganducolor {
+  color: #8000ff;
+  font-weight: 500;
+  text-align: right;
+  padding: 10px 0;
+  padding-right: 30px;
+  pointer-events: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between the icon and text */
+  color: #011a41;
+  font-weight: 500;
+  padding: 10px;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+ul li:hover a {
+  color: #fff;
+  background-color: #2a2c30;
+}
+
+ul li a .icon {
+  font-size: 1.2rem;
+}
+/* Highlight active NavLink */
+.active-link1 {
+  color: #fff;
+  background-color: #8000ff;
+  border-radius: 5px; /* Optional for rounded corners */
+}
+
+
+/* Toggle Button */
+.toggle {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  left: 45px;
+  z-index: 101;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.toggle .common {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: #8000ff;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.toggle .top_line {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Animations for Toggle */
+/* .rotate45 {
+  transform: translate(2px, 14px) rotate(45deg);
+  width: 25px;
+}
+
+.rotateMinus45 {
+  transform: translate(2px, 14px) rotate(-45deg);
+  width: 25px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(20px);
+} */
+
+/* Animations for Toggle Lines */
+.rotate45 {
+  transform: translate(-50%, -50%) rotate(45deg); /* Top line rotates */
+  top: 50%; /* Move to the center */
+}
+
+.rotateMinus45 {
+  transform: translate(-50%, -50%) rotate(-45deg); /* Bottom line rotates */
+  top: 50%; /* Move to the center */
+}
+
+.hidden {
+  opacity: 0; /* Middle line disappears */
+  transform: scale(0); /* Shrinks out of view */
+}
+
+
