@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://openlibrary.org/search.json',
+    baseURL: 'https://openlibrary.org/search.json',
 });
 
 export const getBooks = (searchTerm) => {
